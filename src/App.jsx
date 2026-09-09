@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <div className="page">
       <header className="hero">
         <div className="hero-content">
           <h1>Bnei Noach - Filhos da Aliança</h1>
@@ -103,7 +103,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
 

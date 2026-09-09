@@ -1,28 +1,3 @@
-/* CSS Variables */
-:root {
-  --primary: #2c3e50;
-  --secondary: #3498db;
-  --accent: #e74c3c;
-  --light: #ecf0f1;
-  --dark: #2c3e50;
-  --text-primary: #2c3e50;
-  --text-secondary: #7f8c8d;
-  --border: #bdc3c7;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --max-width: 1200px;
-  /* For compatibility with vite's default usage */
-  --text: var(--text-primary);
-  --bg: #fff;
-  --accent-bg: rgba(234, 76, 60, 0.1);
-  --accent-border: rgba(234, 76, 60, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-}
-
-/* Reset & Base Styles */
 *,
 *::before,
 *::after {
@@ -30,66 +5,19 @@
 }
 
 html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: var(--sans);
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--text);
-  background-color: var(--bg);
-  color-scheme: light dark;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--secondary);
-}
-
-/* Ensure root element uses full height */
+body,
 #root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
 }
 
-/* Media query for base font size */
-@media (width <= 1024px) {
-  body {
-    font-size: 16px;
-  }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2a37;
+  background: #f7f4ee;
 }
 
-/* Dark mode overrides */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --bg: #16171d;
-    --border: #2e303a;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
-  }
-  body {
-    background-color: var(--bg);
-    color: var(--text);
-  }
-  .social-links a {
-    filter: invert() brightness(2);
-  }
+#root {
+  display: block;
+  width: 100%;
 }
