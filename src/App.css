@@ -187,8 +187,9 @@ a:hover {
 }
 
 .law-item h3::before {
-  content: '📜';
+  content: '>';
   font-size: 1.2rem;
+  color: var(--secondary);
 }
 
 /* Benefits List */
