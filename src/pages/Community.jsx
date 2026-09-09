@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ChatGuide } from '../components/ChatGuide'
 import { BOOKS, PRAYERS, PRAYER_GROUP, STUDIES, TABS } from '../content/community'
 import { useAuth } from '../context/AuthContext'
 
 export function Community() {
   const { user, isAdmin, logout } = useAuth()
-  const [tab, setTab] = useState('estudos')
+  const [tab, setTab] = useState('chat')
 
   return (
     <div className="page community">
@@ -50,6 +51,8 @@ export function Community() {
 
       <section className="panel dusk">
         <div className="wrap">
+          {tab === 'chat' ? <ChatGuide /> : null}
+
           {tab === 'estudos' ? (
             <>
               <h2>Grupo de estudos</h2>

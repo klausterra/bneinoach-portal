@@ -510,6 +510,60 @@
   border-bottom: 1px solid rgba(212, 180, 106, 0.16);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.chat-log {
+  margin-top: 1.4rem;
+  min-height: 220px;
+  max-height: 420px;
+  overflow: auto;
+  padding-right: 0.4rem;
+}
+
+.bubble {
+  margin: 0 0 0.8rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(212, 180, 106, 0.16);
+  background: rgba(14, 18, 24, 0.35);
+}
+
+.bubble.me {
+  border-color: rgba(212, 180, 106, 0.4);
+}
+
+.bubble p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.starters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.chat-form {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.chat-form textarea {
+  width: 100%;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(212, 180, 106, 0.28);
+  border-radius: 10px;
+  background: rgba(14, 18, 24, 0.35);
+  color: #efe8d6;
+}
+
 @media (max-width: 860px) {
   .menu-btn {
     display: flex;

@@ -1,4 +1,5 @@
 export const TABS = [
+  { id: 'chat', label: 'Guia IA' },
   { id: 'estudos', label: 'Grupo de estudos' },
   { id: 'oracao', label: 'Grupo de oração' },
   { id: 'livros', label: 'Livros de oração' },

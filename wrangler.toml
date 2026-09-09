@@ -1,3 +1,10 @@
 name = "bneinoach"
 pages_build_output_dir = "dist"
 compatibility_date = "2026-09-08"
+
+[vars]
+VERTEX_PROJECT = "hipercube-500101"
+VERTEX_LOCATION = "us-central1"
+VERTEX_MODEL = "gemini-2.5-flash"
+FIREBASE_WEB_API_KEY = "AIzaSyBr-QoJasxWE15yBPXOHCEvEkb25lNU9Oo"
+
