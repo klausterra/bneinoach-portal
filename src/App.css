@@ -308,8 +308,44 @@
   gap: 1rem;
 }
 
-.offer li {
-  margin-bottom: 0.75rem;
+.offer-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.offer-card {
+  background: rgba(14, 18, 24, 0.18);
+  border: 1px solid rgba(212, 180, 106, 0.22);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.panel.dusk .offer-card {
+  background: rgba(243, 236, 224, 0.04);
+  border-color: rgba(212, 180, 106, 0.3);
+}
+
+.offer-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.offer-card p {
+  line-height: 1.6;
+  color: #efe8d6;
+}
+
+.panel:not(.dusk) .offer-card {
+  background: #fffaf2;
+  border-color: rgba(42, 38, 31, 0.08);
+}
+
+.panel:not(.dusk) .offer-card p {
+  color: #2a261f;
 }
 
 .form {

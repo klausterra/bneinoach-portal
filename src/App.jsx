@@ -238,17 +238,38 @@ function App() {
       <section className="panel" id="estudos">
         <div className="wrap narrow">
           <p className="kicker">Comunidade</p>
-          <h2>Estudo, não espetáculo</h2>
+          <h2>Grupo de estudos e oração</h2>
           <p className="intro">
-            Este portal começa como casa de estudo: textos, caminho e
-            conversa. Sem marketing de conversão. Sem substituir um rav.
+            Além do estudo das sete leis, cultivamos vida de oração e
+            aplicação prática. Todos os encontros são gratuitos e abertos
+            a quem estiver sinceramente interessado no caminho noético.
           </p>
-          <ul className="offer">
-            <li>Leitura guiada das sete leis e de Hilchot Melachim</li>
-            <li>Círculo de perguntas sobre prática no dia a dia</li>
-            <li>Mapa de fontes — Tanach, Talmud, midrash e Rishonim</li>
-            <li>Acolhida de quem investiga o caminho sem pressa</li>
-          </ul>
+          <div className="offer-grid">
+            <article className="offer-card">
+              <h3>📚 Estudos semanais</h3>
+              <p>Leitura comentada das sete leis com fontes primárias:
+              Torá, Talmud, Mishneh Torah e comentários clássicos.
+              Encontros quinzenais com espaço para perguntas.</p>
+            </article>
+            <article className="offer-card">
+              <h3>🤲 Grupo de oração</h3>
+              <p>Encontros mensais para oração conforme a tradição
+              noética: berachot (bençãos), tehilim (salmos) e
+              hitbodedut (oração pessoal e meditativa).</p>
+            </article>
+            <article className="offer-card">
+              <h3>📖 Livros de oração recomendados</h3>
+              <p>Siddur Bnei Noach (em preparo), Tehilim com
+              comentário, Berachot compiladas e guias de hitbodedut
+              baseado em fontes rabínicas adaptadas ao caminho noético.</p>
+            </article>
+            <article className="offer-card">
+              <h3>✒️ Exemplos de oração e aplicação</h3>
+              <p>Modelos de berachot para eventos da vida,
+             祷文 para início do estudo, bênçãos sobre comida
+              e natureza, e aplicações práticas das leis no cotidiano.</p>
+            </article>
+          </div>
         </div>
       </section>
 
